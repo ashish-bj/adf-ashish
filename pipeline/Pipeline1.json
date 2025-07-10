@@ -22,9 +22,10 @@
 			}
 		],
 		"parameters": {
-			"changeNumber": {
-				"type": "string"
-			}
+		   "changeNumber": {
+    			"type": "string",
+    			"defaultValue": ""
+		   }
 		},
 		"variables": {
 			"auditChangeNumber": {
