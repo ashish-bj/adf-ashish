@@ -1,4 +1,12 @@
 {
+    "Microsoft.DataFactory/factories": {
+        "properties": {
+            "tags": {
+                "ChangeNumber": "="
+            }
+        }
+    },
+    
     "Microsoft.DataFactory/factories/pipelines": {
         "properties": {
             "activities": [
