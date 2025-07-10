@@ -1,0 +1,36 @@
+{
+	"name": "Pipeline1",
+	"properties": {
+		"description": "Pipeline to demonstrate use of changeNumber parameter",
+		"activities": [
+			{
+				"name": "SetChangeNumber",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "auditChangeNumber",
+					"value": {
+						"value": "@pipeline().parameters.changeNumber",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"changeNumber": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"auditChangeNumber": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
